@@ -60,7 +60,7 @@ export class SuggesterProvider extends Component<
       threshold: 0.6,
       location: 0,
       distance: 100,
-      maxPatternLength: 32,
+      // maxPatternLength option has been removed or is not valid in the current Fuse.js version
       minMatchCharLength: 1,
       keys: ['value'],
     })
