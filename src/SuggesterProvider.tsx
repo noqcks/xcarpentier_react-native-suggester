@@ -126,7 +126,7 @@ export class SuggesterProvider extends Component<
   getData = () => {
     const { values, currentName, data } = this.state
     return this.fuse && currentName && values[currentName!]
-      ? this.fuse!.search(values[currentName!])
+      ? this.fuse!.search(values[currentName!]).map(result => result.item)
       : data
   }
 
