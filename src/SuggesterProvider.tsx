@@ -190,7 +190,7 @@ export class SuggesterProvider extends Component<
             >
               <SuggesterModal
                 {...{
-                  data: this.getData(),
+                  data: this.getData().map(result => result.item),
                   selectFromList,
                   textWhenEmpty,
                   backgroundColor,
